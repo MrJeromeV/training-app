@@ -22,7 +22,7 @@ node {
       junit '**/target/surefire-reports/TEST-*.xml'
       archiveArtifacts 'target/*.jar'
    }
-   stage('Sonarque') {
+   stage('Sonarqube') {
        bat(/mvn -B sonar:sonar/)
    }
 }
