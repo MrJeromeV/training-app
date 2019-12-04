@@ -25,4 +25,7 @@ node {
    stage('Sonarqube') {
        bat(/mvn -B sonar:sonar/)
    }
+   stage('Publish') {
+	bat(/mvn -DdeployOnly deploy /)
+   }
 }
