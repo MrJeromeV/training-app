@@ -26,6 +26,6 @@ node {
        bat(/mvn -B sonar:sonar/)
    }
    stage('Publish') {
-	bat(/mvn -DdeployOnly deploy -s "C:\integ_continue\apache-maven-3.6.3\conf\settings.xml"/)
+	bat(/mvn -DdeployOnly deploy/)
    }
 }
